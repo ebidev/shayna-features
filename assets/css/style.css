@@ -1,0 +1,182 @@
+:root{
+    --dark:#150544;
+    --primary:#614EF5;
+    --secondary:#5A6772;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: var(--dark);
+}
+
+/* Grid */
+.w-70{
+    width: 70%;
+}
+.w-75{
+    width: 75%;
+}
+.w-40{
+    width: 40%;
+}
+.fs-18{
+    font-size: 18px;
+}
+.fs-20{
+    font-size: 20px;
+}
+.fs-36{
+    font-size: 36px;
+}
+.mt-40{
+    margin-top: 40px;
+}
+.mt-100{
+    margin-top: 100px;
+}
+.mt-150{
+    margin-top: 150px;
+}
+
+/* Text */
+.fw-medium{
+    font-weight: 500;
+}
+.fw-extra-bold{
+    font-weight: 800;
+}
+.text-dark{
+    color: var(--dark);
+}
+.text-secondary{
+    color: var(--secondary);
+}
+.price{
+    font-size: 52px;
+    font-weight: 800;
+}
+
+/* Nav */
+.wrap-nav{
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
+.navbar .nav-item{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.navbar .nav-item>.nav-link{
+    color: var(--secondary);
+}
+.navbar .nav-item>.nav-link.active{
+    color: var(--dark);
+    font-weight: 500;
+}
+
+/* Button */
+.btn-dark{
+    background-color: var(--dark);
+    color: white;
+}
+.btn-dark:hover{
+    border: 1px solid var(--dark);
+    background-color: white;
+    color: var(--dark);
+}
+.btn-primary{
+    background-color: var(--primary);
+    border: none;
+    color: white;
+}
+.btn-primary:hover{
+    background-color: white;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+}
+.btn{
+    height: 50px;
+    font-weight: 500;
+}
+
+/* Card */
+.card-icon{
+    background-color: var(--primary);
+    width: 70px;
+    height: 70px;
+    border-radius: 26px;
+}
+.card-packages{
+    border-radius: 11px;
+}
+.card-packages li{
+    font-weight: 500;
+    padding: 30px 0;
+}
+.card-basic{
+    border: none;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.05);
+}
+.card-basic .icon{
+    color: var(--primary);
+}
+.card-pro{
+    border: 2px solid var(--dark);
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+}
+.card-pro .card-header{
+    background-color: var(--dark);
+    color: white;
+}
+.card-pro .icon{
+    color: var(--dark);
+}
+
+/* Etc */
+.union{
+    position: absolute;
+    top: 150px;
+    z-index: -1;
+    width: 100%;
+}
+.union2{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+}
+
+.icon{
+    font-size: 26px;
+    line-height: 1px;
+}
+
+hr{
+    border: 1px solid #DFE2E4;
+    border-color: #DFE2E4;
+}
+
+#packages{
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #E7F6FF 50%);
+}
+
+#story{
+    color: white;
+    background: url('/assets/images/union2.png');
+    background-color: var(--dark);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#story .head-story h1{
+    line-height: normal;
+}
+.line-story{
+    text-decoration: underline;
+    text-decoration-color: #6552FF;
+}
+@media (min-width:768px){
+    .head-story::before{
+        content: url(/assets/images/petik.png);
+        position: relative;
+        top: -40px;
+    }
+}
